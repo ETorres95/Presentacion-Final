@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+</HEAD>
+ 
+<BODY>
+
+    <label>Click me <input type="text" id="Name" name="Name" /></label>
+
+    <script>
+        var face0=new Image()
+        face0.src="numero1.png"
+        var face1=new Image()
+        face1.src="numero2.png"
+        var face2=new Image()
+        face2.src="numero3.png"
+        var face3=new Image()
+        face3.src="numero4.png"
+        var face4=new Image()
+        face4.src="numero5.png"
+        var face5=new Image()
+        face5.src="numero6.png"
+        var face5=new Image()
+        face6.src="numero7.png"
+        var face5=new Image()
+        face7.src="numero8.png"
+        var face5=new Image()
+        face8.src="numero9.png"
+        var face5=new Image()
+        face9.src="numero10.png"
+    </script>
+ 
+ 
+    <img src="" name="mydice">
+ 
+    <form>
+    <input type="button" value="Lanza dado" onClick="lanzar()">
+    </form>
+ 
+    <script>
+    function lanzar()
+    {
+        var randomdice=Math.round(Math.random()*5);
+        document.images["mydice"].src=eval("face"+randomdice+".src");
+    }
+    </script>
+ 
+</BODY>
+</HTML>
